@@ -1,0 +1,107 @@
+/* FONT IMPORTAÇÃO */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Inter&display=swap');
+
+/* VARIAVEIS */
+:root {
+  --main-font: inter;
+  --main-font-tittle: Bowlby One;
+  --main-color: #000;
+  --main-fontColorWhite: #fff;
+  --main-degradeColorWhite: linear-gradient(90deg, #6D246E 21.31%, #FC05FF 100%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-fontColorWhite);
+  margin: 0, 15px, 0, 15px;
+}
+
+
+/* HEADER */
+header {
+  height: 8rem;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+}
+.container {
+  /* background-color: brown; */
+  width: 1200px;
+  max-width: 1440px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu nav {
+  text-transform: uppercase;
+  font-family: var(--main-font);
+  font-size: 15px;
+  font-weight: 400;
+  padding: 7px;
+  margin-right: 10px;
+  border-right: 1px solid #6d246eb7;
+  
+}
+.menu nav a {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  transition: all .3s ease;
+  border-bottom: 3px solid transparent;
+    color: rgba(255, 255, 255, 0.74);
+}
+.menu nav a:hover,
+.active {
+  color: rgb(255, 255, 255) !important;
+  border-bottom: 3px solid #000;
+  border-image: var(--main-degradeColorWhite) 1;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--main-font);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--main-fontColorWhite);
+  background-color: transparent;
+  border: solid 2px transparent;
+  color: rgba(255, 255, 255, 0.74);
+  /* border-image: var(--main-degradeColorWhite)1 ; */
+  padding: 0, 0.2em;
+  padding-right: 1em;
+  border-radius: 5px;
+  background-image: linear-gradient(black, black), linear-gradient(90deg, #6D246E 21.31%, #FC05FF 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+button:hover{
+background-image: linear-gradient(black, black), linear-gradient(90deg, #FC05FF 100%, #6D246E 21.31%);
+color: rgb(255, 255, 255);
+}
+button span {
+  display: flex;
+  align-items: center;
+}
